@@ -7,7 +7,7 @@ backend:
 media_library:
   name: uploadcare
   config:
-    publicKey: 012e3d35e94b8223b2fc
+    publicKey: 6829ba7fb53df153b25e
     multiple: false
     tabs: 'file camera url facebook gdrive'
     effects: 'crop,rotate,enhance,grayscale'
