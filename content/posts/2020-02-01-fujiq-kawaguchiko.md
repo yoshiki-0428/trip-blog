@@ -8,7 +8,9 @@ excerpt: ->
 categories:
   - category: 国内旅行
 ---
+
 # 三連休、無駄にしたくない！！！
+
 
 「今度の三連休、天気予報晴れだよ！！！富士急行きたい！！！ええじゃないか乗りたい！！！」
 
@@ -20,6 +22,8 @@ categories:
 どこ泊まる、、、？
 
 
+
+
 富士急
 ＝チケット代6200円
 
@@ -29,9 +33,7 @@ categories:
 
 ということで、今回は、
 
-**Airbnb**を使用させていただくことにしました！
-
-
+**booking.com** を使用させていただきました！
 
 # 部屋から河口湖一望！コスパ良すぎる宿泊施設
 
@@ -41,8 +43,6 @@ categories:
 ドライブを楽しみながら車を走らせること4時間、
 
 「あ！！！富士山！！！」
-
-![EbZJDXxo7DLrMfMX/HHlpaI81pEZo7atD.jpg](https://firebasestorage.googleapis.com/v0/b/type-c1c71.appspot.com/o/EbZJDXxo7DLrMfMX%2FHHlpaI81pEZo7atD.jpg?alt=media&token=d7b0d486-4990-49bf-b13a-371830e456c9)
 
 
 ついに見えてきましたマウントフジ！！
@@ -59,17 +59,24 @@ categories:
 
 そのお部屋の広いこと広いこと。
 
-そしてなにより、オーシャンビューならぬ、河口湖ビュー！！
 
 
 この宿は、民泊施設で、外国人の方もたくさん泊まっていました。
 
-お部屋の中にトイレと洗面所は無く、部屋の外に共有スペースがあります。
+・トイレと洗面所は、部屋の外の共有スペース
 
-布団は人数分敷いてあり、全て畳の和室でした。
+・共用温泉あり
+
+・共有スペースにwi-fiがあり
+
+・全て畳の和室（布団は敷いてある）
 
 
-そして、素泊まりプランということで、一部屋　　円程で泊まることができました。
+
+そして、素泊まりプランで、一部屋9000円程で泊まることができました。
+
+
+![EbZJDXxo7DLrMfMX/HHlpaI81pEZo7atD.jpg](https://firebasestorage.googleapis.com/v0/b/type-c1c71.appspot.com/o/EbZJDXxo7DLrMfMX%2FHHlpaI81pEZo7atD.jpg?alt=media&token=d7b0d486-4990-49bf-b13a-371830e456c9)
 
 
 # 近すぎる富士山に感動、、宿から徒歩1分の公園
@@ -110,6 +117,30 @@ categories:
 https://goo.gl/maps/qf65PxHj4qr5UUXf6
 ```
 
+# お腹空いたところにイタリアン発見！
+
+自転車で25分程走らせると、美味しそうなイタリアンのお店が！
+
+入ってみると、イタリアンのいい香り。
+
+メニューはこんな感じ。
+
+![EbZJDXxo7DLrMfMX/nYekgUhrAnCuYxll.jpg](https://firebasestorage.googleapis.com/v0/b/type-c1c71.appspot.com/o/EbZJDXxo7DLrMfMX%2FnYekgUhrAnCuYxll.jpg?alt=media&token=89430209-dcf7-453b-b6d1-00f3674ff088)
+
+
+そして石窯も発見！
+
+![EbZJDXxo7DLrMfMX/18WqQIyZgW45bPIs.jpg](https://firebasestorage.googleapis.com/v0/b/type-c1c71.appspot.com/o/EbZJDXxo7DLrMfMX%2F18WqQIyZgW45bPIs.jpg?alt=media&token=d1f90c1f-fb37-462e-954f-a411a2c145c1)
+
+マルゲリータと、アーリオオーリオを食べました。美味しかった！
+
+![EbZJDXxo7DLrMfMX/sac4lC48QJFJpEgT.jpg](https://firebasestorage.googleapis.com/v0/b/type-c1c71.appspot.com/o/EbZJDXxo7DLrMfMX%2Fsac4lC48QJFJpEgT.jpg?alt=media&token=91585c1b-fe45-4242-aefc-7a9387b6f9ab)
+
+```
+RICETTA
+〒401-0310 山梨県南都留郡富士河口湖町勝山2861-1
+http://www.ricetta-jp.com/p/index.html?m=1
+```
 
 # 10月でもキラキラしてる富士急
 
@@ -132,9 +163,9 @@ https://goo.gl/maps/qf65PxHj4qr5UUXf6
 
 今回の目的は、富士急！
 
-ということで、チケット代を考え、宿泊コストをとても少なくしました。
+ということで、チケット代を考え、宿泊コストを少なくしました。
 
-Airbnbは、旅行の目的別で、ただ寝られる場所を探しているならば、コストも削減しやすいですね。
+旅行の目的別で、ただ寝られる場所を探しているならば、宿泊場所でコストも削減しやすいですね。
 
 今回宿泊した宿は、河口湖から徒歩圏内、公園付近、富士山を一望できる、
 
@@ -147,3 +178,5 @@ Airbnbは、旅行の目的別で、ただ寝られる場所を探している�
 ![EbZJDXxo7DLrMfMX/muRkID0AZwFOu2vW.jpg](https://firebasestorage.googleapis.com/v0/b/type-c1c71.appspot.com/o/EbZJDXxo7DLrMfMX%2FmuRkID0AZwFOu2vW.jpg?alt=media&token=11584d84-4880-4a54-ad68-474655bafde7)
 
 やはり、富士山は、美しい！！！
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51962.30440425298!2d138.71000761856172!3d35.51307943971326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60195fb4a5043f4f%3A0x29cbb24b1e337d47!2z5rKz5Y-j5rmW!5e0!3m2!1sja!2sjp!4v1580646128690!5m2!1sja!2sjp" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
