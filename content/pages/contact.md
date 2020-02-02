@@ -4,7 +4,7 @@ slug: contact
 title: お仕事、ご質問等の連絡はこちらまで
 featuredImage: https://ucarecdn.com/e22a858a-b420-47af-99f6-ed54b6860333/
 subtitle: ''
-address: 'Tokyo Otaku'
+address: '東京都大田区'
 phone: ''
 email: rrrtcdish2@gmail.com
 locations:

@@ -8,6 +8,7 @@ import GithubCorner from './GithubCorner'
 
 import 'modern-normalize/modern-normalize.css'
 import './globalStyles.css'
+import IframelyComponent from './IframlyComponent'
 
 export default ({ children, meta, title }) => {
   return (
@@ -52,6 +53,7 @@ export default ({ children, meta, title }) => {
 
         return (
           <Fragment>
+            <IframelyComponent />
             <Helmet
               defaultTitle={siteTitle}
               titleTemplate={`%s | ${siteTitle}`}
