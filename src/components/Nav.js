@@ -86,7 +86,7 @@ export class Navigation extends Component {
             <NavLink to="/blog/">
               All Posts
             </NavLink>
-            {subNav.posts.map((link, index) => (
+            {subNav.posts.sort().map((link, index) => (
               <NavLink
                 to={link.slug}
                 key={'posts-subnav-link-' + index}
