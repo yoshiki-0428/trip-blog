@@ -3,20 +3,11 @@ template: HomePage
 slug: ''
 title: Trip Blog
 featuredImage: 'https://ucarecdn.com/159203d3-881d-4218-baa1-ca4427b48d0d/'
-subtitle: 'ようこそTripBlog(仮)へ。このブログでは主にコスパ良し旅を押していきます'
+subtitle: 'ようこそTripBlogへ'
 meta:
-  description: ようこそTripBlog(仮)へ。このブログでは主にコスパ良し旅を押していきます
+  description: ようこそTripBlogへ
   title: Trip Blog
 ---
 
-# このブログについて
+# ようこそTrip
 
-- ここに自己紹介が入ります
-- ここに自己紹介が入ります
-- ここに自己紹介が入ります
-- ここに自己紹介が入ります
-- ここに自己紹介が入ります
-
-# 始める理由
-
-# 目的とか
