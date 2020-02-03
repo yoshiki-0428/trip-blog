@@ -2,12 +2,16 @@ import React from 'react'
 import { graphql } from 'gatsby'
 
 import PageHeader from '../components/PageHeader'
-import Content from '../components/Content'
 import Layout from '../components/Layout'
-import BlogIndex from './BlogIndex'
+import PostSection from '../components/PostSection'
 
 // Export Template for use in CMS preview
-export const HomePageTemplate = ({ title, subtitle, featuredImage, body }) => (
+export const HomePageTemplate = ({
+  title,
+  subtitle,
+  featuredImage,
+  posts = []
+}) => (
   <main className="Home">
     <PageHeader
       large
@@ -16,19 +20,30 @@ export const HomePageTemplate = ({ title, subtitle, featuredImage, body }) => (
       backgroundImage={featuredImage}
     />
 
-
-    {/*<section className="section">*/}
-    {/*  <div className="container">*/}
-    {/*    <Content source={body} />*/}
-    {/*  </div>*/}
-    {/*</section>*/}
+    {!!posts.length && (
+      <section className="section">
+        <div className="container">
+          <PostSection posts={posts} />
+        </div>
+      </section>
+    )}
   </main>
 )
 
 // Export Default HomePage for front-end
-const HomePage = ({ data: { page } }) => (
+const HomePage = ({ data: { page, posts } }) => (
   <Layout meta={page.frontmatter.meta || false}>
-    <HomePageTemplate {...page} {...page.frontmatter} body={page.html} />
+    <HomePageTemplate
+      {...page}
+      {...page.frontmatter}
+      body={page.html}
+      posts={posts.edges.map(post => ({
+        ...post.node,
+        ...post.node.frontmatter,
+        ...post.node.fields
+    }))}
+
+    />
   </Layout>
 )
 
@@ -47,6 +62,28 @@ export const pageQuery = graphql`
         title
         subtitle
         featuredImage
+      }
+    }
+    
+    posts: allMarkdownRemark(
+      filter: { fields: { contentType: { eq: "posts" } } }
+      sort: { order: DESC, fields: [frontmatter___date] }
+    ) {
+      edges {
+        node {
+          excerpt
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+            date
+            categories {
+              category
+            }
+            featuredImage
+          }
+        }
       }
     }
   }
