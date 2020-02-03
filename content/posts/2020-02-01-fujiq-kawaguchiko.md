@@ -111,11 +111,10 @@ categories:
 ピクニックにもよさそうですね。
 
 
-```
-長崎公園
-〒401-0305 山梨県南都留郡富士河口湖町大石
-https://goo.gl/maps/qf65PxHj4qr5UUXf6
-```
+> 長崎公園
+> 〒401-0305 山梨県南都留郡富士河口湖町大石
+<div style="min-width: 100px;"><div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://maps.google.com/maps?q=%E3%80%92401-0305%20%E5%B1%B1%E6%A2%A8%E7%9C%8C%E5%8D%97%E9%83%BD%E7%95%99%E9%83%A1%E5%AF%8C%E5%A3%AB%E6%B2%B3%E5%8F%A3%E6%B9%96%E7%94%BA%E5%A4%A7%E7%9F%B3%20%E9%95%B7%E5%B4%8E%E5%85%AC%E5%9C%92&amp;ftid=0x60195f692ee10103%3A0x9a321460899ae0a8&amp;hl=ja-JP&amp;gl=jp&amp;shorturl=1&amp;ie=UTF8&amp;output=embed" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen></iframe></div></div>
+
 
 # お腹空いたところにイタリアン発見！
 
@@ -136,13 +135,14 @@ https://goo.gl/maps/qf65PxHj4qr5UUXf6
 
 ![EbZJDXxo7DLrMfMX/sac4lC48QJFJpEgT.jpg](https://firebasestorage.googleapis.com/v0/b/type-c1c71.appspot.com/o/EbZJDXxo7DLrMfMX%2Fsac4lC48QJFJpEgT.jpg?alt=media&token=91585c1b-fe45-4242-aefc-7a9387b6f9ab)
 
-```
-RICETTA
-〒401-0310 山梨県南都留郡富士河口湖町勝山2861-1
-http://www.ricetta-jp.com/p/index.html?m=1
-```
+> RICETTA
+> 〒401-0310 山梨県南都留郡富士河口湖町勝山2861-1
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="http://www.ricetta-jp.com/p/index.html" data-iframely-url="//cdn.iframe.ly/api/iframe?url=http%3A%2F%2Fwww.ricetta-jp.com%2Fp%2Findex.html%3Fm%3D1&amp;key=4672f5d28011347a2549354aa5d0123d"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
 
 # 10月でもキラキラしてる富士急
+
+<div class="iframely-embed"><div class="iframely-responsive" style="padding-bottom: 52.5%; padding-top: 120px;"><a href="http://www.fujiq.jp/ja/index.html" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fwww.fujiq.jp%2F&amp;key=4672f5d28011347a2549354aa5d0123d"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
+
 
 翌朝、念願のええじゃないか乗りました！！！
 
