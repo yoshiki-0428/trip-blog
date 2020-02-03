@@ -7,7 +7,7 @@ import Footer from './Footer'
 
 import 'modern-normalize/modern-normalize.css'
 import './globalStyles.css'
-import IframelyComponent from './IframlyComponent'
+import IframlyComponent from './IframlyComponent'
 
 export default ({ children, meta, title }) => {
   return (
@@ -52,12 +52,14 @@ export default ({ children, meta, title }) => {
 
         return (
           <Fragment>
-            <IframelyComponent />
+            <IframlyComponent />
             <Helmet
               defaultTitle={siteTitle}
               titleTemplate={`%s | ${siteTitle}`}
             >
               {title}
+              <script data-ad-client="ca-pub-1075201051914394" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" />
+              <script src="//cdn.iframe.ly/embed.js"  async />
               <link href="https://ucarecdn.com" rel="preconnect" crossorigin />
               <link rel="dns-prefetch" href="https://ucarecdn.com" />
               {/* Add font link tags here */}

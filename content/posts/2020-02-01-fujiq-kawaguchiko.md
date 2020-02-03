@@ -59,7 +59,7 @@ categories:
 
 そのお部屋の広いこと広いこと。
 
-
+<div class="iframely-embed"><div class="iframely-responsive" style="padding-bottom: 75%; padding-top: 120px;"><a href="https://www.booking.com/hotel/jp/togawasou.ja.html" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fwww.booking.com%2Fhotel%2Fjp%2Ftogawasou.ja.html%3Faid%3D304142&amp;key=4672f5d28011347a2549354aa5d0123d"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
 
 この宿は、民泊施設で、外国人の方もたくさん泊まっていました。
 
