@@ -1,6 +1,7 @@
 import React from 'react'
 import CMS from 'netlify-cms-app'
 import './cms-utils'
+import uploadcare from 'netlify-cms-media-library-uploadcare'
 import moment from 'moment'
 
 import { HomePageTemplate } from '../templates/HomePage'
@@ -9,13 +10,13 @@ import { ContactPageTemplate } from '../templates/ContactPage'
 import { BlogIndexTemplate } from '../templates/BlogIndex'
 import { SinglePostTemplate } from '../templates/SinglePost'
 
+CMS.registerMediaLibrary(uploadcare)
+
 if (
   window.location.hostname === 'localhost' &&
   window.localStorage.getItem('netlifySiteURL')
 ) {
-  CMS.registerPreviewStyle(
-    window.localStorage.getItem('netlifySiteURL') + '/styles.css'
-  )
+  CMS.registerPreviewStyle('/styles.css')
 } else {
   CMS.registerPreviewStyle('/styles.css')
 }
