@@ -1,6 +1,7 @@
 import React from 'react'
 import CMS from 'netlify-cms-app'
 import './cms-utils'
+import moment from 'moment'
 
 import { HomePageTemplate } from '../templates/HomePage'
 import { ComponentsPageTemplate } from '../templates/ComponentsPage'
@@ -31,6 +32,16 @@ CMS.registerPreviewTemplate('contact-page', ({ entry }) => (
 CMS.registerPreviewTemplate('blog-page', ({ entry }) => (
   <BlogIndexTemplate {...entry.toJS().data} />
 ))
-CMS.registerPreviewTemplate('posts', ({ entry }) => (
-  <SinglePostTemplate {...entry.toJS().data} />
-))
+CMS.registerPreviewTemplate('posts', ({ entry }) => {
+  const isDateObject = Boolean(typeof entry.toJS().data.date === 'object')
+  const date = isDateObject ? moment(entry.toJS().data.date).format("YYYY/MM/DD HH:mm") : entry.toJS().data.date
+  return (
+    <SinglePostTemplate
+      title={entry.toJS().data.title}
+      date={date}
+      body={entry.toJS().data.body}
+      nextPostURL={entry.toJS().data.nextPostURL}
+      prevPostURL={entry.toJS().data.prevPostURL}
+    />
+  )
+})
