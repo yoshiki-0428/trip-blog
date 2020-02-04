@@ -1,11 +1,12 @@
 ---
 template: ContactPage
 slug: contact
-title: お仕事、ご質問等の連絡はこちらまで
-featuredImage: https://ucarecdn.com/e22a858a-b420-47af-99f6-ed54b6860333/
-subtitle: ''
-address: '東京都大田区'
-phone: ''
+title: お問い合わせはこちら
+featuredImage: >-
+  https://ucarecdn.com/d26bddaa-f5d5-457a-8d51-9c0255a20658/-/preview/-/enhance/57/
+subtitle: ' .'
+address: 東京都大田区
+phone: 09012345678
 email: rrrtcdish2@gmail.com
 locations:
   - lat: '139.45'
