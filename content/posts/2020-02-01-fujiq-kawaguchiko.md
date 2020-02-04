@@ -3,8 +3,7 @@ template: SinglePost
 title: 富士山一望!! FujiQからも近いおすすめスポットに1泊2日小旅行
 status: Published
 date: 'February 1, 2020 10:30 PM'
-featuredImage: >-
-  https://firebasestorage.googleapis.com/v0/b/type-c1c71.appspot.com/o/EbZJDXxo7DLrMfMX%2FsNOUmcmVSzehb2g9.jpg?alt=media&token=27598095-901f-471d-af60-c2e183931c7b
+featuredImage: 'https://ucarecdn.com/189aaf4a-a19b-419f-bc24-d05e5fe615b5/'
 excerpt: '->'
 categories:
   - category: 国内旅行
