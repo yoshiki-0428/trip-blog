@@ -27,7 +27,7 @@ categories:
 
 ということで、今回は、
 
-**booking.com** を使用させていただきました！
+[**booking.com**](https://booking.com) を使用させていただきました！
 
 # 部屋から河口湖一望！コスパ良すぎる宿泊施設
 
@@ -45,9 +45,7 @@ categories:
 
 そこは、修学旅行で泊まりに来るような雰囲気の民宿施設でした。
 
-部屋に入ると、びっくり仰天！
-
-そのお部屋の広いこと広いこと。
+まあ普通に布団があって、普通の広さで値段相応なお宿でした！今回の目的は**富士山**と**富士急**なのでお宿はこのくらいで十分！
 
 <div class="iframely-embed"><div class="iframely-responsive" style="padding-bottom: 75%; padding-top: 120px;"><a href="https://www.booking.com/hotel/jp/togawasou.ja.html" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fwww.booking.com%2Fhotel%2Fjp%2Ftogawasou.ja.html%3Faid%3D304142&amp;key=4672f5d28011347a2549354aa5d0123d"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
 
