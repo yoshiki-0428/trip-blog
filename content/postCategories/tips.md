@@ -1,9 +1,7 @@
 ---
 template: BlogIndex
 title: Tips
-slug: tips
 subtitle: ''
-featuredImage: >-
-  https://publicdomainq.net/images/201707/10s/publicdomainq-0010964omt.jpg
+featuredImage: 'https://ucarecdn.com/d879ebbd-83ce-4e6e-a174-3fe632695c0c/'
 ---
 
