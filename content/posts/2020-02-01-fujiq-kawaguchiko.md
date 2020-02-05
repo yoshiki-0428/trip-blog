@@ -1,6 +1,7 @@
 ---
 template: SinglePost
 title: 富士山一望!! FujiQからも近いおすすめスポットに1泊2日小旅行
+slug: fujiq-kawaguchiko
 status: Published
 date: 2020-02-01T13:27:08.545Z
 featuredImage: 'https://ucarecdn.com/189aaf4a-a19b-419f-bc24-d05e5fe615b5/'
