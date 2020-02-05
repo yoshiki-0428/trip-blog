@@ -1,6 +1,7 @@
 ---
 template: SinglePost
 title: 「奥多摩湖」自然に囲まれた遊歩道！人が少ない夕日の絶景穴場も
+slug: dam-okutakamako
 status: Published
 date: 2020-02-02T10:27:08.545Z
 featuredImage: 'https://ucarecdn.com/a109e2c8-12e2-4fce-adeb-49aff1729e2f/'
