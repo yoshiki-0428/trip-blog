@@ -12,15 +12,6 @@ import { SinglePostTemplate } from '../templates/SinglePost'
 
 CMS.registerMediaLibrary(uploadcare)
 
-if (
-  window.location.hostname === 'localhost' &&
-  window.localStorage.getItem('netlifySiteURL')
-) {
-  CMS.registerPreviewStyle('/styles.css')
-} else {
-  CMS.registerPreviewStyle('/styles.css')
-}
-
 CMS.registerPreviewTemplate('home-page', ({ entry }) => (
   <HomePageTemplate {...entry.toJS().data} />
 ))
