@@ -252,6 +252,7 @@ collections: # A list of collections the CMS should be able to edit
     fields: # The fields each document in this collection have
       - { label: Template, name: template, widget: hidden, default: SinglePost }
       - { label: Title, name: title, widget: string }
+      - { label: Slug, name: slug, widget: string, required: false }
       - label: 'Status'
         name: 'status'
         widget: 'select'
@@ -308,6 +309,7 @@ collections: # A list of collections the CMS should be able to edit
       - { label: Template, name: template, widget: hidden, default: BlogIndex }
       - { label: Title, name: title, widget: string }
       - { label: Subtitle, name: subtitle, widget: string, required: false }
+      - { label: Slug, name: slug, widget: string, required: false }
       - {
           label: Featured Image,
           name: featuredImage,
