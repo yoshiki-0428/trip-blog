@@ -253,6 +253,7 @@ collections: # A list of collections the CMS should be able to edit
       - { label: Template, name: template, widget: hidden, default: SinglePost }
       - { label: Title, name: title, widget: string }
       - { label: 'URL', name: slug, widget: string, required: false }
+      - { label: 'Tags', name: 'tags', widget: 'list', required: false }
       - label: 'Status'
         name: 'status'
         widget: 'select'
@@ -278,11 +279,6 @@ collections: # A list of collections the CMS should be able to edit
             collection: 'postCategories'
             searchFields: ['title']
             valueField: 'title'
-      - label: 'Tags'
-        name: 'tags'
-        widget: 'list'
-        required: false
-
       - label: 'Meta'
         required: false
         name: 'meta'
