@@ -3,18 +3,20 @@ const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
 const { fmImagesToRelative } = require('gatsby-remark-relative-images')
 
-exports.createPages = ({ actions, graphql }) => {
+exports.createPages = async ({ actions, graphql }) => {
   const { createPage } = actions
+  const tagTemplate = path.resolve("src/templates/tags.js")
 
-  return graphql(`
+  const result = await graphql(`
     {
-      allMarkdownRemark(limit: 1000) {
+      postsRemark: allMarkdownRemark(limit: 1000) {
         edges {
           node {
             id
             frontmatter {
               template
               title
+              tags
             }
             fields {
               slug
@@ -23,39 +25,54 @@ exports.createPages = ({ actions, graphql }) => {
           }
         }
       }
+      tagsGroup: allMarkdownRemark(limit: 2000) {
+        group(field: frontmatter___tags) {
+          fieldValue
+        }
+      }
     }
-  `).then(result => {
-    if (result.errors) {
-      result.errors.forEach(e => console.error(e.toString()))
-      return Promise.reject(result.errors)
-    }
+  `)
 
-    const mdFiles = result.data.allMarkdownRemark.edges
+  if (result.errors) {
+    result.errors.forEach(e => console.error(e.toString()))
+    return Promise.reject(result.errors)
+  }
 
-    const contentTypes = _.groupBy(mdFiles, 'node.fields.contentType')
+  const mdFiles = result.data.postsRemark.edges
+  const tags = result.data.tagsGroup.group
+  // Make tag pages
+  tags.forEach(tag => {
+    createPage({
+      path: `/tags/${_.kebabCase(tag.fieldValue)}/`,
+      component: tagTemplate,
+      context: {
+        tag: tag.fieldValue,
+      },
+    })
+  })
+  const contentTypes = _.groupBy(mdFiles, 'node.fields.contentType')
 
-    _.each(contentTypes, (pages, contentType) => {
-      const pagesToCreate = pages.filter(page =>
-        // get pages with template field
-        _.get(page, `node.frontmatter.template`)
-      )
-      if (!pagesToCreate.length) return console.log(`Skipping ${contentType}`)
+  _.each(contentTypes, (pages, contentType) => {
+    const pagesToCreate = pages.filter(page =>
+      // get pages with template field
+      _.get(page, `node.frontmatter.template`)
+    )
+    if (!pagesToCreate.length) return console.log(`Skipping ${contentType}`)
 
-      console.log(`Creating ${pagesToCreate.length} ${contentType}`)
+    console.log(`Creating ${pagesToCreate.length} ${contentType}`)
 
-      pagesToCreate.forEach((page, index) => {
-        const id = page.node.id
-        createPage({
-          // page slug set in md frontmatter
-          path: page.node.fields.slug,
-          component: path.resolve(
-            `src/templates/${String(page.node.frontmatter.template)}.js`
-          ),
-          // additional data can be passed via context
-          context: {
-            id
-          }
-        })
+    pagesToCreate.forEach((page, index) => {
+      const id = page.node.id
+      createPage({
+        // page slug set in md frontmatter
+        path: page.node.fields.slug,
+        component: path.resolve(
+          `src/templates/${String(page.node.frontmatter.template)}.js`
+        ),
+        // additional data can be passed via context
+        context: {
+          id
+        }
       })
     })
   })

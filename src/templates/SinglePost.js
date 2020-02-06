@@ -126,6 +126,7 @@ export const pageQuery = graphql`
         categories {
           category
         }
+        tags
       }
     }
 

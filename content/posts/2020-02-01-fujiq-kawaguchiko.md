@@ -8,6 +8,8 @@ featuredImage: 'https://ucarecdn.com/189aaf4a-a19b-419f-bc24-d05e5fe615b5/'
 excerpt: '->'
 categories:
   - category: 国内旅行
+tags: ["富士急", "河口湖", "富士山", "山梨県"]
+
 ---
 # 三連休、無駄にしたくない！！！
 
