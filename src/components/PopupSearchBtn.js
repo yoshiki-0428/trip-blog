@@ -9,7 +9,6 @@ class PopupSearchBtn extends Component {
   constructor(props) {
     super(props)
     this.state = { showPopup: false, searchWord: '' }
-    this.nameInput.focus();
   }
 
   togglePopup() {
@@ -34,6 +33,7 @@ class PopupSearchBtn extends Component {
   }
 
   componentDidMount(){
+    console.log(this.state.showPopup)
     this.nameInput.focus();
   }
 
