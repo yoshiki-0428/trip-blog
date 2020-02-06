@@ -12,6 +12,21 @@ input[type='text'] {
     right: 3.3rem;
 }
 
+.my-node-enter {
+    opacity: 0;
+}
+.my-node-enter-active {
+    opacity: 1;
+    transition: opacity 300ms;
+}
+.my-node-exit {
+    opacity: 1;
+}
+.my-node-exit-active {
+    opacity: 0;
+    transition: opacity 300ms;
+}
+
 .Popup-Overlay {
   overflow: hidden;
   height: 100vh;

@@ -4,17 +4,18 @@ import { navigate } from 'gatsby'
 
 import './PopupSearchBtn.css'
 import SVGIcon from './SVGIcon'
+import { CSSTransition } from 'react-transition-group'
 
 class PopupSearchBtn extends Component {
   constructor(props) {
     super(props)
-    this.state = { showPopup: false, searchWord: '' }
+    this.state = { showDom: false, showCss: false, searchWord: '' }
   }
 
   togglePopup() {
-    this.setState({
-      showPopup: !this.state.showPopup
-    })
+    const delayState = () => this.setState({ showDom: !this.state.showDom })
+    this.setState({ showCss: !this.state.showCss })
+    Boolean(this.state.showDom) ? setTimeout(delayState, 300) : delayState()
   }
 
   toggleAndSearch() {
@@ -33,8 +34,6 @@ class PopupSearchBtn extends Component {
   }
 
   componentDidMount(){
-    console.log(this.state)
-    // this.nameInput.focus();
   }
 
   render() {
@@ -44,31 +43,33 @@ class PopupSearchBtn extends Component {
           <SVGIcon src='/images/icon-search.svg' size={3} />
         </div>
 
-        {this.state.showPopup ? (
-          <div className="Popup-Overlay">
-            <div
-              className="Popup-Background"
-              onClick={this.togglePopup.bind(this)}
-            />
-            <div className="Popup-Inner">
-              <X className="Popup-Close" stroke="white" onClick={this.togglePopup.bind(this)} />
-              <div style={{display: 'inline-flex'}}>
-                <input type="text"
-                       ref={(input) => { this.nameInput = input; }}
-                       value={this.state.searchWord}
-                       placeholder="記事を検索する"
-                       onChange={e => this.setSearchWord(e.target.value)}
-                       onKeyDown={e => {
-                         if (e.keyCode === 13) {
-                           this.toggleAndSearch()
-                         }
-                       }}
-                />
-                <SVGIcon src='/images/icon-search.svg' size={3} onClick={this.toggleAndSearch.bind(this)} />
+        <CSSTransition in={this.state.showCss} timeout={300} classNames="my-node">
+          {this.state.showDom ? (
+            <div className="Popup-Overlay">
+              <div
+                className="Popup-Background"
+                onClick={this.togglePopup.bind(this)}
+              />
+              <div className="Popup-Inner">
+                <X className="Popup-Close" stroke="white" onClick={this.togglePopup.bind(this)} />
+                <div style={{display: 'inline-flex'}}>
+                  <input type="text"
+                         ref={(input) => { this.nameInput = input; }}
+                         value={this.state.searchWord}
+                         placeholder="記事を検索する"
+                         onChange={e => this.setSearchWord(e.target.value)}
+                         onKeyDown={e => {
+                           if (e.keyCode === 13) {
+                             this.toggleAndSearch()
+                           }
+                         }}
+                  />
+                  <SVGIcon src='/images/icon-search.svg' size={3} onClick={this.toggleAndSearch.bind(this)} />
+                </div>
               </div>
             </div>
-          </div>
-        ) : null}
+          ) : <div/>}
+        </CSSTransition>
       </Fragment>
     )
   }
