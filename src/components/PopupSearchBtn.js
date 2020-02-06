@@ -33,8 +33,8 @@ class PopupSearchBtn extends Component {
   }
 
   componentDidMount(){
-    console.log(this.state.showPopup)
-    this.nameInput.focus();
+    console.log(this.state)
+    // this.nameInput.focus();
   }
 
   render() {
