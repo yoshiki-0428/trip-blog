@@ -43,7 +43,7 @@ class PopupSearchBtn extends Component {
           <SVGIcon src='/images/icon-search.svg' size={3} />
         </div>
 
-        <CSSTransition in={this.state.showCss} timeout={300} classNames="my-node">
+        <CSSTransition in={this.state.showCss} timeout={300} classNames="Popup--transition">
           {this.state.showDom ? (
             <div className="Popup-Overlay">
               <div
