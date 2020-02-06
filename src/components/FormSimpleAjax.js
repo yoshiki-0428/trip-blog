@@ -62,7 +62,7 @@ class Form extends React.Component {
           name={name}
           action={action}
           onSubmit={this.handleSubmit}
-          data-netlify=""
+          data-netlify="true"
           netlify-recaptcha=""
         >
           {this.state.alert && (
@@ -121,21 +121,21 @@ class Form extends React.Component {
             />
             <span>Email address</span>
           </label>
-          <label className="Form--Label has-arrow">
-            <select
-              className="Form--Input Form--Select"
-              name="type"
-              defaultValue="Type of Enquiry"
-              required
-            >
-              <option disabled hidden>
-                Type of Enquiry
-              </option>
-              <option>Need to know more</option>
-              <option>Found a bug</option>
-              <option>Want to say hello</option>
-            </select>
-          </label>
+//           <label className="Form--Label has-arrow">
+//             <select
+//               className="Form--Input Form--Select"
+//               name="type"
+//               defaultValue="Type of Enquiry"
+//               required
+//             >
+//               <option disabled hidden>
+//                 Type of Enquiry
+//               </option>
+//               <option>Need to know more</option>
+//               <option>Found a bug</option>
+//               <option>Want to say hello</option>
+//             </select>
+//           </label>
           <label className="Form--Label">
             <textarea
               className="Form--Input Form--Textarea Form--InputText"
