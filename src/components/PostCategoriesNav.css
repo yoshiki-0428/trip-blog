@@ -24,8 +24,11 @@
 }
 
 @media (max-width: 600px) {
-  .PostCategoriesNav .taCenter {
-    position: relative;
-    width: 100%;
-  }
+    .PostCategoriesNav {
+        position: relative;
+        width: 100%;
+    }
+    .taCenter .SVGIcon {
+        right: 0;
+    }
 }
