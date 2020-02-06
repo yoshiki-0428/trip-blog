@@ -1,0 +1,58 @@
+input[type='text'] {
+    border: 0;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    font-size: 1.4rem;
+    color: black;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+}
+
+.SVGIcon {
+    top: 0.3rem;
+    right: 3.3rem;
+}
+
+.Popup-Overlay {
+  overflow: hidden;
+  height: 100vh;
+  width: 100%;
+  z-index: 9999999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.Popup-Background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  height: 100%;
+  width: 100%;
+  z-index: 9999999;
+  overflow: hidden;
+}
+
+.Popup-Inner {
+  width: 100%;
+  max-height: 80%;
+  position: fixed;
+  z-index: 99999999;
+  text-align: center;
+  padding: 8rem;
+  overflow: hidden;
+}
+
+.Popup-Close {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  cursor: pointer;
+}

@@ -6,31 +6,25 @@
   position: relative;
 }
 
-.PostCategoriesNav > * + * {
-  margin-left: 1rem;
-}
+/*.PostCategoriesNav > * + * {*/
+/*  margin-left: 1rem;*/
+/*}*/
 
-.PostCategoriesNav input[type='text'] {
+.PostCategoriesNav .taCenter {
   right: 0;
   position: absolute;
-  border: 0;
-  padding: 1rem 2rem;
-  border-radius: 2rem;
-  font-size: 1.4rem;
-  color: black;
-  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
 }
 
-.PostCategoriesNav input[type='text']:focus {
+.PostCategoriesNav .taCenter:focus {
   outline: none;
 }
 
-.PostCategoriesNav input[type='text']::placeholder {
+.PostCategoriesNav .taCenter::placeholder {
   color: black;
 }
 
 @media (max-width: 600px) {
-  .PostCategoriesNav input[type='text'] {
+  .PostCategoriesNav .taCenter {
     position: relative;
     width: 100%;
   }

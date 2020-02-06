@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-import BlogSearch from './BlogSearch'
 import './PostCategoriesNav.css'
+import PopupSearchBtn from './PopupSearchBtn'
 
 const PostCategoriesNav = ({ categories, enableSearch }) => (
   <div className="PostCategoriesNav">
@@ -20,7 +20,7 @@ const PostCategoriesNav = ({ categories, enableSearch }) => (
       </Link>
     ))}
 
-    {enableSearch && <BlogSearch />}
+    {enableSearch && <PopupSearchBtn />}
   </div>
 )
 

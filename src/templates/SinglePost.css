@@ -57,10 +57,6 @@
     padding: 2rem 0;
 }
 
-.SinglePost--InnerContent .iframely-embed > div, div {
-    z-index: 1;
-}
-
 @media screen and (max-width: 750px) {
   .SinglePost--InnerContent {
     padding: 0;
