@@ -5,7 +5,6 @@ const { fmImagesToRelative } = require('gatsby-remark-relative-images')
 
 exports.createPages = async ({ actions, graphql }) => {
   const { createPage } = actions
-  const tagTemplate = path.resolve("src/templates/tags.js")
 
   const result = await graphql(`
     {
@@ -44,7 +43,7 @@ exports.createPages = async ({ actions, graphql }) => {
   tags.forEach(tag => {
     createPage({
       path: `/tags/${_.kebabCase(tag.fieldValue)}/`,
-      component: tagTemplate,
+      component: path.resolve("src/templates/Tags.js"),
       context: {
         tag: tag.fieldValue,
       },
