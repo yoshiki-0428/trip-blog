@@ -71,7 +71,7 @@ export const pageQuery = graphql`
     ) {
       edges {
         node {
-          excerpt
+          excerpt(truncate: true, pruneLength: 50)
           fields {
             slug
           }
