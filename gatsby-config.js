@@ -128,6 +128,13 @@ module.exports = {
     },
     'gatsby-plugin-sitemap',
     {
+      resolve: `gatsby-plugin-hotjar`,
+      options: {
+        id: 1677249,
+        sv: 6
+      },
+    },
+    {
       resolve: 'gatsby-plugin-netlify-cms',
       options: {
         modulePath: `${__dirname}/src/cms/cms.js`,
