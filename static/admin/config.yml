@@ -278,7 +278,7 @@ collections: # A list of collections the CMS should be able to edit
             collection: 'postCategories'
             searchFields: ['title']
             valueField: 'title'
-      - { label: Excerpt, name: excerpt, widget: text, required: fales }
+      - { label: Excerpt, name: excerpt, widget: text, required: false }
       - label: 'Meta'
         required: false
         name: 'meta'
