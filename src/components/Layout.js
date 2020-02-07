@@ -58,8 +58,8 @@ export default ({ children, meta, title }) => {
               titleTemplate={`%s | ${siteTitle}`}
             >
               {title}
-              <script data-ad-client="ca-pub-1075201051914394" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" />
-              <script src="//cdn.iframe.ly/embed.js"  async />
+              {/*<script data-ad-client="ca-pub-1075201051914394" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" />*/}
+              <script src="https://cdn.iframe.ly/embed.js"  async />
               <link href="https://ucarecdn.com" rel="preconnect" crossorigin />
               <link rel="dns-prefetch" href="https://ucarecdn.com" />
               {/* Add font link tags here */}
