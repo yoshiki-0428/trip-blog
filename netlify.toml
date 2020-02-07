@@ -4,3 +4,8 @@
 [build.environment]
   YARN_VERSION = "1.3.2"
   YARN_FLAGS = "--no-ignore-optional"
+[[redirects]]
+  from = "https://trip-blog.netlify.com/*"
+  to = "https://yomomo.page/:splat"
+  status = 301
+  force = true
