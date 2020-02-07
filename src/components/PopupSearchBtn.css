@@ -1,4 +1,4 @@
-input[type='text'] {
+.Popup-Inner div input[type='text'] {
     border: 0;
     padding: 1rem 2rem;
     border-radius: 2rem;
