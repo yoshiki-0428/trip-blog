@@ -266,7 +266,6 @@ collections: # A list of collections the CMS should be able to edit
           widget: image,
           required: false,
         }
-      - { label: Excerpt, name: excerpt, widget: text }
       - { label: Content, name: body, widget: markdown }
       - label: 'Categories'
         name: 'categories'
@@ -279,6 +278,7 @@ collections: # A list of collections the CMS should be able to edit
             collection: 'postCategories'
             searchFields: ['title']
             valueField: 'title'
+      - { label: Excerpt, name: excerpt, widget: text, required: fales }
       - label: 'Meta'
         required: false
         name: 'meta'
