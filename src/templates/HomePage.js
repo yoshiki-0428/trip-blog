@@ -4,6 +4,7 @@ import { graphql } from 'gatsby'
 import PageHeader from '../components/PageHeader'
 import Layout from '../components/Layout'
 import PostSection from '../components/PostSection'
+import Adsense from '../components/Adsense'
 
 // Export Template for use in CMS preview
 export const HomePageTemplate = ({
@@ -44,6 +45,7 @@ const HomePage = ({ data: { page, posts } }) => (
     }))}
 
     />
+    <Adsense/>
   </Layout>
 )
 
