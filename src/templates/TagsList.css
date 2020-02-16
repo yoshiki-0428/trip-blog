@@ -1,5 +1,7 @@
 .TagsList ul {
-    margin: 2rem auto;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
     list-style: none;
     width: 90%;
 }
