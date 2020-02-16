@@ -42,6 +42,7 @@ exports.createPages = async ({ actions, graphql }) => {
   const tags = result.data.tagsGroup.group
 
   let tagId;
+  // TODO DRY
   _.each(contentTypes, (pages, contentType) => {
     const pagesToCreate = pages.filter(page =>
       // get pages with template field
