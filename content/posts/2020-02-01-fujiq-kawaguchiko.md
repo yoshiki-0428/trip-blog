@@ -2,14 +2,17 @@
 template: SinglePost
 title: 富士山一望!! FujiQからも近いおすすめスポットに1泊2日小旅行
 slug: fujiq-kawaguchiko
+tags:
+  - 富士急
+  - 河口湖
+  - 富士山
+  - 山梨県
 status: Published
 date: 2020-02-01T13:27:08.545Z
 featuredImage: 'https://ucarecdn.com/189aaf4a-a19b-419f-bc24-d05e5fe615b5/'
-excerpt: '->'
 categories:
   - category: 国内旅行
-tags: ["富士急", "河口湖", "富士山", "山梨県"]
-
+excerpt: '->'
 ---
 # 三連休、無駄にしたくない！！！
 
@@ -153,3 +156,17 @@ tags: ["富士急", "河口湖", "富士山", "山梨県"]
 やはり、富士山は、美しい！！！
 
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51962.30440425298!2d138.71000761856172!3d35.51307943971326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60195fb4a5043f4f%3A0x29cbb24b1e337d47!2z5rKz5Y-j5rmW!5e0!3m2!1sja!2sjp!4v1580646128690!5m2!1sja!2sjp" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+
+<ins class="bookingaff" data-aid="1976667" data-target_aid="1976667" data-prod="banner" data-width="200" data-height="200" data-lang="ja">
+    <!-- Anything inside will go away once widget is loaded. -->
+        <a href="//www.booking.com?aid=1976667">Booking.com</a>
+</ins>
+<script type="text/javascript">
+    (function(d, sc, u) {
+      var s = d.createElement(sc), p = d.getElementsByTagName(sc)[0];
+      s.type = 'text/javascript';
+      s.async = true;
+      s.src = u + '?v=' + (+new Date());
+      p.parentNode.insertBefore(s,p);
+      })(document, 'script', '//aff.bstatic.com/static/affiliate_base/js/flexiproduct.js');
+</script>
