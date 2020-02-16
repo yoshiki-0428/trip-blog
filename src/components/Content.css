@@ -3,8 +3,11 @@
   max-width: 100%;
   display: block;
   height: auto;
-  margin-bottom: 2.5rem;
   border-radius: 0.3rem;
+}
+
+.Content div {
+  margin-bottom: 0.5rem;
 }
 
 .Content--Iframe {
