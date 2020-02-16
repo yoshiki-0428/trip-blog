@@ -154,19 +154,3 @@ excerpt: '->'
 ![EbZJDXxo7DLrMfMX/muRkID0AZwFOu2vW.jpg](https://firebasestorage.googleapis.com/v0/b/type-c1c71.appspot.com/o/EbZJDXxo7DLrMfMX%2FmuRkID0AZwFOu2vW.jpg?alt=media&token=11584d84-4880-4a54-ad68-474655bafde7)
 
 やはり、富士山は、美しい！！！
-
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51962.30440425298!2d138.71000761856172!3d35.51307943971326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60195fb4a5043f4f%3A0x29cbb24b1e337d47!2z5rKz5Y-j5rmW!5e0!3m2!1sja!2sjp!4v1580646128690!5m2!1sja!2sjp" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-
-<ins class="bookingaff" data-aid="1976667" data-target_aid="1976667" data-prod="banner" data-width="200" data-height="200" data-lang="ja">
-    <!-- Anything inside will go away once widget is loaded. -->
-        <a href="//www.booking.com?aid=1976667">Booking.com</a>
-</ins>
-<script type="text/javascript">
-    (function(d, sc, u) {
-      var s = d.createElement(sc), p = d.getElementsByTagName(sc)[0];
-      s.type = 'text/javascript';
-      s.async = true;
-      s.src = u + '?v=' + (+new Date());
-      p.parentNode.insertBefore(s,p);
-      })(document, 'script', '//aff.bstatic.com/static/affiliate_base/js/flexiproduct.js');
-</script>
