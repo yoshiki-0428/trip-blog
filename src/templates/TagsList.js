@@ -1,13 +1,11 @@
 import React from "react"
-import "./TagsList.css"
 
 // Components
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import PageHeader from '../components/PageHeader'
 import Layout from '../components/Layout'
-import { kebabCase } from 'lodash/string'
-import { orderBy } from 'lodash/collection'
 import PostSection from '../components/PostSection'
+import { Tags } from '../components/Tags'
 
 // Export Template for use in CMS preview
 export const TagsListTemplate = ({
@@ -16,7 +14,7 @@ export const TagsListTemplate = ({
   featuredImage,
   group,
   posts,
-  targetTag
+  selectedTag
 }) => (
   <main className="TagsList">
     <PageHeader
@@ -25,16 +23,7 @@ export const TagsListTemplate = ({
       backgroundImage={featuredImage}
     />
 
-    <ul>
-      {orderBy(group, ['totalCount'], ['desc']).map(tag => (
-        <li key={tag.fieldValue}>
-          <Link to={`/tags/${kebabCase(tag.fieldValue)}/`} className={targetTag === tag.fieldValue ? 'TagsList--Selected' : '' }>
-            {tag.fieldValue}
-            <span>{tag.totalCount}</span>
-          </Link>
-        </li>
-      ))}
-    </ul>
+    <Tags tags={group} selectedTag={selectedTag} />
 
     {!!posts.length && (
       <section className="section">
@@ -59,7 +48,7 @@ const TagsList = ({ pageContext: { tag }, data: { page, group, posts } }) => (
         ...post.node.frontmatter,
         ...post.node.fields
       }))}
-      targetTag={tag}
+      selectedTag={tag}
     />
   </Layout>
 )

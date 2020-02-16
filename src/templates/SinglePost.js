@@ -6,9 +6,11 @@ import { ChevronLeft } from 'react-feather'
 import Content from '../components/Content'
 import Layout from '../components/Layout'
 import './SinglePost.css'
+import { Tags } from '../components/Tags'
 
 export const SinglePostTemplate = ({
   title,
+  postTags,
   date,
   body,
   nextPostURL,
@@ -53,6 +55,8 @@ export const SinglePostTemplate = ({
             )}
           </div>
 
+          <Tags tags={postTags} selectedTag={null} />
+
           {title && (
             <h1 className="SinglePost--Title" itemProp="title">
               {title}
@@ -81,6 +85,7 @@ export const SinglePostTemplate = ({
               </Link>
             )}
           </div>
+          <Tags tags={postTags} selectedTag={null} />
         </div>
       </div>
     </article>
@@ -88,8 +93,9 @@ export const SinglePostTemplate = ({
 )
 
 // Export Default SinglePost for front-end
-const SinglePost = ({ data: { post, allPosts } }) => {
+const SinglePost = ({ data: { post, allPosts, group } }) => {
   const thisEdge = allPosts.edges.find(edge => edge.node.id === post.id)
+  const tags = group.group.filter(tag => post.frontmatter.tags.includes(tag.fieldValue))
   return (
     <Layout
       meta={post.frontmatter.meta || false}
@@ -98,6 +104,7 @@ const SinglePost = ({ data: { post, allPosts } }) => {
       <SinglePostTemplate
         {...post}
         {...post.frontmatter}
+        postTags={tags}
         body={post.html}
         nextPostURL={_get(thisEdge, 'next.fields.slug')}
         prevPostURL={_get(thisEdge, 'previous.fields.slug')}
@@ -122,7 +129,7 @@ export const pageQuery = graphql`
         title
         template
         subtitle
-        date(formatString: "YYYY/MM/DD HH:mm")
+        date(formatString: "YYYY/MM/DD")
         categories {
           category
         }
@@ -154,6 +161,13 @@ export const pageQuery = graphql`
             title
           }
         }
+      }
+    }
+
+    group: allMarkdownRemark(limit: 2000) {
+      group(field: frontmatter___tags) {
+        fieldValue
+        totalCount
       }
     }
   }
