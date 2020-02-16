@@ -1,7 +1,7 @@
 .TagsList ul {
-    margin: 1rem;
-    padding: 2rem;
+    margin: 2rem auto;
     list-style: none;
+    width: 90%;
 }
 
 .TagsList ul li {
@@ -30,9 +30,13 @@
     color: var(--primary);
 }
 .TagsList ul li a:hover {
-    color: var(--primary);
     border: 1px solid var(--primary);
 }
 .TagsList ul li a:hover span {
     color: #000000;
+}
+
+.TagsList--Selected {
+    color: var(--primary) !important;
+    border: 1px solid var(--primary) !important;
 }

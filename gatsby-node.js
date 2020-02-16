@@ -38,18 +38,33 @@ exports.createPages = async ({ actions, graphql }) => {
   }
 
   const mdFiles = result.data.postsRemark.edges
+  const contentTypes = _.groupBy(mdFiles, 'node.fields.contentType')
   const tags = result.data.tagsGroup.group
+
+  let tagId;
+  _.each(contentTypes, (pages, contentType) => {
+    const pagesToCreate = pages.filter(page =>
+      // get pages with template field
+      _.get(page, `node.frontmatter.template`)
+    )
+    if (!pagesToCreate.length) return console.log(`Skipping ${contentType}`)
+
+
+    pagesToCreate.forEach((page, index) => {
+      if (page.node.frontmatter.template === 'TagsList') tagId = page.node.id
+    })
+  })
   // Make tag pages
   tags.forEach(tag => {
     createPage({
       path: `/tags/${_.kebabCase(tag.fieldValue)}/`,
-      component: path.resolve("src/templates/Tags.js"),
+      component: path.resolve("src/templates/TagsList.js"),
       context: {
         tag: tag.fieldValue,
+        id: tagId,
       },
     })
   })
-  const contentTypes = _.groupBy(mdFiles, 'node.fields.contentType')
 
   _.each(contentTypes, (pages, contentType) => {
     const pagesToCreate = pages.filter(page =>
@@ -61,6 +76,7 @@ exports.createPages = async ({ actions, graphql }) => {
     console.log(`Creating ${pagesToCreate.length} ${contentType}`)
 
     pagesToCreate.forEach((page, index) => {
+      console.log('page', page)
       const id = page.node.id
       createPage({
         // page slug set in md frontmatter
