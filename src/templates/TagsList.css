@@ -1,0 +1,38 @@
+.TagsList ul {
+    margin: 1rem;
+    padding: 2rem;
+    list-style: none;
+}
+
+.TagsList ul li {
+    display: inline-block;
+    margin: 0 .3em .3em 0;
+    padding: 0;
+}
+
+.TagsList ul li a {
+    text-decoration: none;
+    background: white;
+    color: inherit;
+    border: 1px solid var(--lightGrey);
+    border-radius: var(--borderRadius);
+    -webkit-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+    overflow: hidden;
+    padding: 0.5rem 1.5em 0.5rem 1rem;
+    line-height: 3rem;
+}
+.TagsList li span {
+    position: absolute;
+    padding-left: 1rem;
+    color: var(--primary);
+}
+.TagsList ul li a:hover {
+    color: var(--primary);
+    border: 1px solid var(--primary);
+}
+.TagsList ul li a:hover span {
+    color: #000000;
+}
