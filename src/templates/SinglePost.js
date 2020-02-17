@@ -55,7 +55,9 @@ export const SinglePostTemplate = ({
             )}
           </div>
 
-          <Tags tags={postTags} selectedTag={null} />
+          {postTags &&
+            <Tags tags={postTags} selectedTag={null} />
+          }
 
           {title && (
             <h1 className="SinglePost--Title" itemProp="title">
@@ -85,7 +87,9 @@ export const SinglePostTemplate = ({
               </Link>
             )}
           </div>
-          <Tags tags={postTags} selectedTag={null} />
+          {postTags &&
+            <Tags tags={postTags} selectedTag={null} />
+          }
         </div>
       </div>
     </article>
@@ -95,7 +99,9 @@ export const SinglePostTemplate = ({
 // Export Default SinglePost for front-end
 const SinglePost = ({ data: { post, allPosts, group } }) => {
   const thisEdge = allPosts.edges.find(edge => edge.node.id === post.id)
-  const tags = group.group.filter(tag => post.frontmatter.tags.includes(tag.fieldValue))
+  const tags = Boolean(post.frontmatter.tags) ?
+    group.group.filter(tag => post.frontmatter.tags.includes(tag.fieldValue)) : null
+
   return (
     <Layout
       meta={post.frontmatter.meta || false}
