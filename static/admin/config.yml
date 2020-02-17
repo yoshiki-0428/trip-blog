@@ -9,11 +9,12 @@ media_library:
   config:
     publicKey: 6829ba7fb53df153b25e
     multiple: false
-    tabs: 'file camera url facebook gdrive'
-    effects: 'crop,rotate,enhance,grayscale'
-    imageShrink: '2000x2000'
+    tabs: 'file camera url gphotos instagram evernote flickr'
+    effects: 'crop,rotate,mirror,flip,enhance,sharp,blur,grayscale,invert'
+    imageShrink: '1024x1024'
     previewStep: true
     clearable: true
+    locale: 'ja'
 
 collections: # A list of collections the CMS should be able to edit
   - name: 'pages'
