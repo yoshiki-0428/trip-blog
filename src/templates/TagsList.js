@@ -66,7 +66,9 @@ export const pageQuery = graphql`
             }
         }
 
-        group: allMarkdownRemark(limit: 2000) {
+        group: allMarkdownRemark(
+            filter: {fields: { contentType: { eq: "posts" } }, frontmatter: { status: {eq: "Published"} } },
+            limit: 2000) {
             group(field: frontmatter___tags) {
                 fieldValue
                 totalCount

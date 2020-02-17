@@ -1,5 +1,5 @@
-import { orderBy } from 'lodash/collection'
 import { Link } from 'gatsby'
+import { orderBy } from 'lodash/collection'
 import { kebabCase } from 'lodash/string'
 import React from 'react'
 import './Tags.css'
