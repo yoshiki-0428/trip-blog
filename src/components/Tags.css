@@ -1,6 +1,7 @@
 .Tags {
     margin: 2rem auto 1rem;
-    width: 90%;
+    height: 200px;
+    overflow: scroll;
     text-align: center;
 }
 
@@ -21,7 +22,7 @@
     -webkit-transition: all 0.15s ease-in-out;
     transition: all 0.15s ease-in-out;
     overflow: hidden;
-    padding: 0.5rem 1.5em 0.5rem 1rem;
+    padding: 0.5rem 1rem;
     line-height: 3rem;
 }
 
@@ -30,8 +31,7 @@
 }
 
 .Tags li span {
-    position: absolute;
-    padding-left: 1rem;
+    padding-left: 0.5rem;
     color: var(--primary);
 }
 .Tags li a:hover {
