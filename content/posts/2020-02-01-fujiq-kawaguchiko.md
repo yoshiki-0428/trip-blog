@@ -4,7 +4,7 @@ title: 富士山一望!! FujiQからも近いおすすめスポットに1泊2日
 slug: fujiq-kawaguchiko
 tags:
   - 遊園地
-  - 河口湖
+  - 湖
   - 富士山
   - 山梨県
 status: Published
