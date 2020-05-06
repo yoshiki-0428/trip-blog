@@ -1,6 +1,6 @@
 ---
 template: SinglePost
-title: 富士山一望!! FujiQからも近いおすすめスポットに1泊2日小旅行
+title: 『河口湖』富士山一望!! FujiQからも近いおすすめスポットに1泊2日小旅行
 slug: fujiq-kawaguchiko
 tags:
   - 遊園地
