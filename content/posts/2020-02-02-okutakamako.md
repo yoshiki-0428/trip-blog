@@ -3,7 +3,7 @@ template: SinglePost
 title: 『奥多摩湖』自然に囲まれた遊歩道！人が少ない夕日の絶景穴場も
 slug: dam-okutakamako
 tags:
-  - 奥多摩湖
+  - 湖
   - ラーメン
   - 山梨県
 status: Published
