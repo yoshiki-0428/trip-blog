@@ -1,9 +1,9 @@
 ---
 template: HomePage
 slug: ''
-title: Trip Blog
-featuredImage: 'https://ucarecdn.com/159203d3-881d-4218-baa1-ca4427b48d0d/'
-subtitle: 'ようこそTripBlogへ'
+title: 今すぐできる旅をあなたに
+featuredImage: 'https://ucarecdn.com/e9ccd986-4c89-4d02-835e-9b7fa3fe5b21/'
+subtitle: 　
 meta:
   description: ようこそTripBlogへ
   title: Trip Blog
