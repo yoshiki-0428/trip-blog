@@ -41,11 +41,11 @@ class Image extends React.Component {
   getResolutionString(res) {
     /* add resolutions options for inline images */
     if (res === 'small') {
-      res = '800x'
+      res = '400x'
     } else if (res === 'medium') {
-      res = '1000x'
+      res = '500x'
     } else if (res === 'large') {
-      res = '2000x'
+      res = '1000x'
     }
     return res
   }
@@ -63,7 +63,8 @@ class Image extends React.Component {
       onClick,
       title = '',
       alt = '',
-      lazy = true
+      lazy = true,
+      greyScale = false
     } = this.props
 
     const isUploadcare = this.checkIsUploadcare(src),
@@ -83,9 +84,15 @@ class Image extends React.Component {
           '/'
         : ''
     }`
+
     smallSrc = `${src}${
       isUploadcare ? '-/progressive/yes/-/format/auto/-/resize/10x/' : ''
     }`
+    if (greyScale) {
+      const GREY_SCALE_FILTER = '-/filter/carris/'
+      smallSrc += GREY_SCALE_FILTER
+      fullSrc += GREY_SCALE_FILTER
+    }
 
     let style = {}
     if (background) {

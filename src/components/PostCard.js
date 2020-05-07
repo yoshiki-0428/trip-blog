@@ -16,7 +16,8 @@ const PostCard = ({
   <Link to={slug} className={`PostCard ${className}`}>
     {featuredImage && (
       <div className="PostCard--Image relative">
-        <Image background src={featuredImage} alt={title} />
+        <Image background resolutions="small"
+               src={featuredImage} alt={title} />
       </div>
     )}
     <div className="PostCard--Content">
