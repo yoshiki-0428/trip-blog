@@ -9,6 +9,8 @@ import './SinglePost.css'
 import { Tags } from '../components/Tags'
 import { ShareSns } from '../components/ShareSns'
 
+const windowGlobal = typeof window !== 'undefined' && window
+
 export const SinglePostTemplate = ({
   title,
   postTags,
@@ -59,7 +61,9 @@ export const SinglePostTemplate = ({
           {postTags &&
             <Tags tags={postTags} selectedTag={null} />
           }
-          <ShareSns articleUrl={window.location.href} articleTitle={title} />
+          {typeof window !== 'undefined' && window.location.href &&
+            <ShareSns articleUrl={window.location.href} articleTitle={title} />
+          }
 
           {title && (
             <h1 className="SinglePost--Title" itemProp="title">
@@ -92,7 +96,9 @@ export const SinglePostTemplate = ({
           {postTags &&
             <Tags tags={postTags} selectedTag={null} />
           }
-          <ShareSns articleUrl={window.location.href} articleTitle={title} />
+          {typeof window !== 'undefined' && window.location.href &&
+            <ShareSns articleUrl={window.location.href} articleTitle={title} />
+          }
         </div>
       </div>
     </article>
