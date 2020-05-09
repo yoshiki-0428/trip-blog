@@ -48,6 +48,7 @@ body {
 
 a {
   color: var(--primary);
+  text-decoration: none;
 }
 
 strong {
@@ -95,13 +96,16 @@ pre code:before,
 pre code:after {
   display: none;
 }
+
 blockquote {
-  margin-left: 0;
-  padding-left: 1em;
-  line-height: 1.1;
-  font-size: 1em;
-  font-style: italic;
-  border-left: 2px solid var(--primary);
+    background: #f9f9f9;
+    border-left: 10px solid #ccc;
+    margin: 1em 5px;
+    padding: 0.5em 10px;
+}
+blockquote p {
+    color: #525252;
+    display: inline;
 }
 
 /* Utility Classes */

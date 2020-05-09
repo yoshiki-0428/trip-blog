@@ -40,6 +40,10 @@ const withContentImages = source => {
   return source
 }
 
+// const withContentHeaderTag = source => {
+//   const tags = source.match(/<h1>(.*?)\\?<\/h1>/gim)
+// }
+
 const MyImage = ({ nodeKey, src, title, alt }) => {
   const decodedSrc = decodeURI(src)
   return (

@@ -10,19 +10,14 @@
   margin-bottom: 0.5rem;
 }
 
-.Content--Iframe {
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden;
-  max-width: 100%;
-  height: auto;
+.Content h1 {
+    padding: .25em;
+    background: var(--primary);
+    color: #ffffff;
 }
 
-.Content--Iframe iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+.Content h3 {
+    padding: 5px 0 5px 10px;
+    border-left: 8px solid var(--primary);;
+    color: #000000;
 }
