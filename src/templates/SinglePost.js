@@ -7,6 +7,7 @@ import Content from '../components/Content'
 import Layout from '../components/Layout'
 import './SinglePost.css'
 import { Tags } from '../components/Tags'
+import { ShareSns } from '../components/ShareSns'
 
 export const SinglePostTemplate = ({
   title,
@@ -58,6 +59,7 @@ export const SinglePostTemplate = ({
           {postTags &&
             <Tags tags={postTags} selectedTag={null} />
           }
+          <ShareSns articleUrl={window.location.href} articleTitle={title} />
 
           {title && (
             <h1 className="SinglePost--Title" itemProp="title">
@@ -90,6 +92,7 @@ export const SinglePostTemplate = ({
           {postTags &&
             <Tags tags={postTags} selectedTag={null} />
           }
+          <ShareSns articleUrl={window.location.href} articleTitle={title} />
         </div>
       </div>
     </article>
