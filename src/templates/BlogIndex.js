@@ -148,8 +148,8 @@ export const pageQuery = graphql`
           }
           frontmatter {
             title
-            date
-            categories {
+              date(formatString: "YYYY/MM/DD")
+              categories {
               category
             }
             featuredImage

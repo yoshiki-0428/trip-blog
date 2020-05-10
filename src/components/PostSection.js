@@ -29,7 +29,7 @@ class PostSection extends React.Component {
 
     return (
       <div className="PostSection">
-        {title && <h2 className="PostSection--Title">{title}</h2>}
+        {title && <h2 className="PostSection--Title taCenter">{title}</h2>}
         {!!visiblePosts.length && (
           <div className="PostSection--Grid">
             {visiblePosts.map((post, index) => (

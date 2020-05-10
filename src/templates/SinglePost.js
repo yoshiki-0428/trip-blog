@@ -8,8 +8,7 @@ import Layout from '../components/Layout'
 import './SinglePost.css'
 import { Tags } from '../components/Tags'
 import { ShareSns } from '../components/ShareSns'
-
-const windowGlobal = typeof window !== 'undefined' && window
+import PostSection from '../components/PostSection'
 
 export const SinglePostTemplate = ({
   title,
@@ -18,7 +17,8 @@ export const SinglePostTemplate = ({
   body,
   nextPostURL,
   prevPostURL,
-  categories = []
+  categories = [],
+  relatedPosts
 }) => (
   <main>
     <article
@@ -99,6 +99,13 @@ export const SinglePostTemplate = ({
           {typeof window !== 'undefined' && window.location.href &&
             <ShareSns articleUrl={window.location.href} articleTitle={title} />
           }
+          {!!relatedPosts.length && (
+            <section className="section">
+              <div className="container">
+                <PostSection title={'関連記事'} posts={relatedPosts} />
+              </div>
+            </section>
+          )}
         </div>
       </div>
     </article>
@@ -108,8 +115,19 @@ export const SinglePostTemplate = ({
 // Export Default SinglePost for front-end
 const SinglePost = ({ data: { post, allPosts, group } }) => {
   const thisEdge = allPosts.edges.find(edge => edge.node.id === post.id)
-  const tags = Boolean(post.frontmatter.tags) ?
-    group.group.filter(tag => post.frontmatter.tags.includes(tag.fieldValue)) : null
+  // 記事のタグをリストアップ
+  const tags = group.group.filter(tag => post.frontmatter.tags.includes(tag.fieldValue))
+
+  // 関連のある記事を取得する（タグ基準）
+  const relatedPosts =
+    [...new Set(tags.flatMap(t => allPosts.edges
+      .filter(p => p.node.id !== post.id)
+      .filter(p => p.node.frontmatter.tags.includes(t.fieldValue))
+    ))].map(post => ({
+      ...post.node,
+      ...post.node.frontmatter,
+      ...post.node.fields
+  }))
 
   return (
     <Layout
@@ -123,6 +141,7 @@ const SinglePost = ({ data: { post, allPosts, group } }) => {
         body={post.html}
         nextPostURL={_get(thisEdge, 'next.fields.slug')}
         prevPostURL={_get(thisEdge, 'previous.fields.slug')}
+        relatedPosts={relatedPosts}
       />
     </Layout>
   )
@@ -152,32 +171,56 @@ export const pageQuery = graphql`
       }
     }
 
-    allPosts: allMarkdownRemark(
-      filter: { fields: { contentType: { eq: "posts" } } }
-      sort: { order: DESC, fields: [frontmatter___date] }
-    ) {
-      edges {
-        node {
-          id
-        }
-        next {
-          fields {
-            slug
+    allPosts: allMarkdownRemark(filter: {fields: {contentType: {eq: "posts"}}, frontmatter: {status: {eq: "Published"}}}, 
+      sort: {order: DESC, fields: [frontmatter___date]}) {
+        edges {
+          node {
+            id
+            excerpt(truncate: true, pruneLength: 50)
+            fields {
+              slug
+            }
+            frontmatter {
+              title
+              date(formatString: "YYYY/MM/DD")
+              slug
+              categories {
+                category
+              }
+              featuredImage
+              tags
+            }
           }
-          frontmatter {
-            title
+          previous {
+            fields {
+              slug
+            }
+            frontmatter {
+              title
+              date(formatString: "YYYY/MM/DD")
+              categories {
+                category
+              }
+              featuredImage
+              tags
+            }
           }
-        }
-        previous {
-          fields {
-            slug
-          }
-          frontmatter {
-            title
+          next {
+            fields {
+              slug
+            }
+            frontmatter {
+              title
+              date(formatString: "YYYY/MM/DD")
+              categories {
+                category
+              }
+              featuredImage
+              tags
+            }
           }
         }
       }
-    }
 
     group: allMarkdownRemark(limit: 2000) {
       group(field: frontmatter___tags) {
