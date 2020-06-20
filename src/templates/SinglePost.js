@@ -9,8 +9,10 @@ import './SinglePost.css'
 import { Tags } from '../components/Tags'
 import { ShareSns } from '../components/ShareSns'
 import PostSection from '../components/PostSection'
+import Disqus from 'gatsby-plugin-disqus'
 
 export const SinglePostTemplate = ({
+  id,
   title,
   postTags,
   date,
@@ -98,6 +100,13 @@ export const SinglePostTemplate = ({
           }
           {typeof window !== 'undefined' && window.location.href &&
             <ShareSns articleUrl={window.location.href} articleTitle={title} />
+          }
+          {typeof window !== 'undefined' && window.location.href &&
+            <Disqus
+              identifier={id}
+              title={title}
+              url={window.location.href}
+            />
           }
           {!!relatedPosts.length && (
             <section className="section">
