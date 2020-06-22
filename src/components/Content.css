@@ -6,6 +6,18 @@
   border-radius: 0.3rem;
 }
 
+.Content p {
+  line-height: 2.9rem;
+}
+
+.Content ul {
+  margin: 20px 0;
+}
+
+.Content li {
+  margin: 10px 0;
+}
+
 .Content div {
   margin-bottom: 0.5rem;
 }
@@ -18,6 +30,26 @@
 
 .Content h3 {
     padding: 5px 0 5px 10px;
-    border-left: 8px solid var(--primary);;
+    border-left: 8px solid var(--primary);
     color: #000000;
+}
+
+.Content table {
+    border: 1px solid rgba(0,0,0,0.1);
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 20px 0;
+    margin-bottom: 30px;
+}
+.Content table tr th, table tr td {
+    padding: 8px;
+    line-height: 1.6;
+    vertical-align: top;
+    /*text-align: center;*/
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+.Content table tr:nth-child(odd) td {
+    background-color: #f9f9f9;
 }
