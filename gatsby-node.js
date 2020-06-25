@@ -77,7 +77,6 @@ exports.createPages = async ({ actions, graphql }) => {
     console.log(`Creating ${pagesToCreate.length} ${contentType}`)
 
     pagesToCreate.forEach((page, index) => {
-      console.log('page', page)
       const id = page.node.id
       createPage({
         // page slug set in md frontmatter
