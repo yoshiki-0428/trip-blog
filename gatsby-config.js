@@ -49,7 +49,7 @@ module.exports = {
           {
             site {
               siteMetadata {
-                siteUrl: url
+                site_url: siteUrl
               }
             }
             allSitePage(
@@ -67,7 +67,7 @@ module.exports = {
         `,
         output: '/sitemap.xml',
         serialize: ({ site, allSitePage }) => allSitePage.edges.map((edge) => ({
-          url: site.siteMetadata.siteUrl + edge.node.path,
+          url: site.siteMetadata.site_url + edge.node.path,
           changefreq: 'daily',
           priority: 0.7
         }))
